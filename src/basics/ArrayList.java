@@ -15,12 +15,25 @@ public class ArrayList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
     List<Integer> arrayList = new java.util.ArrayList<>();
-      
+    List<Integer> ListOfIntegers = new java.util.ArrayList<>(List.of(66,77,34));
+    List<Integer> arrIntegers = new java.util.LinkedList<>(List.of(66,77,34));
+    
+    //add(E e) is used to insert elements to the end of ArrayList;
     arrayList.add(23);
     arrayList.add(20);
     arrayList.add(55);
     arrayList.add(10);
     
+    //add(int index, E e) is used to add elements to specified index;
+    arrayList.add(3, 15);
+    arrayList.add(5, 33);
+    
+    //addAll(Collection c) inserts all elements to ArrayList from the another collection
+    arrayList.addAll(arrIntegers);
+    
+    //addAll(int index, Collection c) is used to append all elements in specified collection, starting at specified position of list.
+    arrayList.addAll(0, ListOfIntegers);
+ 
     System.out.println(arrayList);
     
 	}
