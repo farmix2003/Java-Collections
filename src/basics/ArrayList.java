@@ -53,12 +53,20 @@ public class ArrayList {
     boolean isEmpty = arrayList.isEmpty();
     System.out.println(isEmpty);
     
-    Iterator<Integer> iterator = arrayList.iterator();
-    while(iterator.hasNext()) {
-    	int i = iterator.next();
-    	System.out.println(i);
-    }
+    
+    //iterator returns an iterator over the elements in the list
+//    Iterator<Integer> iterator = arrayList.iterator();
+//    while(iterator.hasNext()) {
+//    	int i = iterator.next();
+//    	System.out.println(i);
+//    }
+	
+    //size() returns the number of elements present in the list
+    int size = arrayList.size();
+    
+    System.out.println(size);
     
 	}
+    
 
 }
