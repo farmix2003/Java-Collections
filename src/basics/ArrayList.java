@@ -47,6 +47,10 @@ public class ArrayList {
     
 //    System.out.println(arrayList);
     
+    boolean isEmpty = arrayList.isEmpty();
+    System.out.println(isEmpty);
+    
+    
     
 	}
 
