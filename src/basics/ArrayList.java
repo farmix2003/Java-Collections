@@ -15,7 +15,7 @@ public class ArrayList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
     List<Integer> arrayList = new java.util.ArrayList<>();
-    List<Integer> ListOfIntegers = new java.util.ArrayList<>(List.of(66,77,34));
+    List<Integer> ListOfIntegers = new java.util.ArrayList<>(List.of(11,80,34));
     List<Integer> arrIntegers = new java.util.LinkedList<>(List.of(66,77,34));
     
     //add(E e) is used to insert elements to the end of ArrayList;
@@ -35,6 +35,12 @@ public class ArrayList {
     arrayList.addAll(0, ListOfIntegers);
  
     System.out.println(arrayList);
+    
+    //clear() clears ArrayList;
+    
+    arrayList.clear();
+    System.out.println(arrayList);
+    
     
 	}
 
