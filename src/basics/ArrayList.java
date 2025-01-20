@@ -38,8 +38,14 @@ public class ArrayList {
     
     //clear() clears ArrayList;
     
-    arrayList.clear();
-    System.out.println(arrayList);
+//    arrayList.clear();
+    
+    //get(int index) is used to get element at specified index
+    
+    int d = arrayList.get(4);
+    System.out.println(d);
+    
+//    System.out.println(arrayList);
     
     
 	}
