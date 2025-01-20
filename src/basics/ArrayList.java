@@ -1,5 +1,6 @@
 package basics;
 
+import java.util.Iterator;
 import java.util.List;
 
 // ArrayList in Java is a dynamic array implementation that 
@@ -47,10 +48,16 @@ public class ArrayList {
     
 //    System.out.println(arrayList);
     
+    
+    //isEmpty() return boolean value checking whether ArrayList is empty or contains elements
     boolean isEmpty = arrayList.isEmpty();
     System.out.println(isEmpty);
     
-    
+    Iterator<Integer> iterator = arrayList.iterator();
+    while(iterator.hasNext()) {
+    	int i = iterator.next();
+    	System.out.println(i);
+    }
     
 	}
 
