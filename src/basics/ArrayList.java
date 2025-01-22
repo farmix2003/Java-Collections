@@ -73,6 +73,10 @@ public class ArrayList {
     System.out.println("Last indexof 66: "+index);
     System.out.println("When list does not contain specified element: "+arrayList.lastIndexOf(122));
     
+    Object[] arr = arrayList.toArray();
+    for (int i = 0; i < arr.length; i++) {
+		System.out.print(arr[i]+" ");
+	}
     
 	}
     
