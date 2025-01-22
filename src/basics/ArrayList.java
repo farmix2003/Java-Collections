@@ -66,6 +66,14 @@ public class ArrayList {
     
     System.out.println(size);
     
+    //lastIndexOf(Object o) is used to find and return the index in the list of last occurrence of the specified element,
+    // or return -1 if the list does not contain that element;
+    
+    int index = arrayList.lastIndexOf(66);
+    System.out.println("Last indexof 66: "+index);
+    System.out.println("When list does not contain specified element: "+arrayList.lastIndexOf(122));
+    
+    
 	}
     
 
