@@ -79,9 +79,30 @@ public class ArrayList {
     for (int i = 0; i < arr.length; i++) {
 		System.out.print(arr[i]+" ");
 	}
+    
     System.out.println();
+    
+    //indexOf(Object o) returns index of given object, if given object is not in the list, return -1;
     int indexOf = arrayList.indexOf(33);
     System.out.println(indexOf);
+    
+    
+    //remove(int index) removes the element at the given index;
+    System.out.println(arrayList);
+    arrayList.remove(3);
+    System.out.println(arrayList);
+    
+    //remove(Object o) used to remove the first occurrence of specified element;
+    arrayList.remove((Integer)15);
+    System.out.println(arrayList);
+    
+    //removeIf(Predicate<? super E> filter) It is used to remove all the elements from the list that satisfies the given predicate.
+    System.out.println(arrayList.removeIf(o -> o <30));
+    System.out.println(arrayList);
+    
+    //removeAll(Collection<?> c) used to remove all elements from the list
+    arrayList.removeAll(arrIntegers);
+    System.out.println(arrayList);
     
 	}
     
