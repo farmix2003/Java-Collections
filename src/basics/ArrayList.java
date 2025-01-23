@@ -113,10 +113,15 @@ public class ArrayList {
     arrayList.set(1, 46);
     System.out.println(arrayList);
     
+    //The sort() method sorts items in the list. A Comparator can be used to compare pairs of elements.
+    //The comparator can be defined by a lambda expression which is
+    //compatible with the compare() method of Java's Comparator interface
     arrayList.sort(null);
     System.out.println(arrayList);
     arrayList.sort((a, b) -> {return -1*a.compareTo(b);});
     System.out.println(arrayList);
+    
+    System.out.println(arrayList.subList(2, 5));
     
     
 	}
