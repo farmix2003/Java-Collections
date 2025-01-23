@@ -106,11 +106,18 @@ public class ArrayList {
 //    System.out.println(arrayList);
     
     //retainAll(Collection<?> c) in short this method replaces original list with specified one
-    arrayList.retainAll(arrIntegers);
-    System.out.println("ArrayList: "+arrayList);
+//    arrayList.retainAll(arrIntegers);
+//    System.out.println("ArrayList: "+arrayList);
     
-    arrayList.set(0, 46);
+    //set(int index, Element e) replace element in the given index with specified element
+    arrayList.set(1, 46);
     System.out.println(arrayList);
+    
+    arrayList.sort(null);
+    System.out.println(arrayList);
+    arrayList.sort((a, b) -> {return -1*a.compareTo(b);});
+    System.out.println(arrayList);
+    
     
 	}
     
