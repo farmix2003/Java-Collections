@@ -3,6 +3,7 @@ package basics;
 import java.awt.event.ItemEvent;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Spliterator;
 
 // ArrayList in Java is a dynamic array implementation that 
 //  belongs to the Java Collections Framework. 
@@ -121,8 +122,14 @@ public class ArrayList {
     arrayList.sort((a, b) -> {return -1*a.compareTo(b);});
     System.out.println(arrayList);
     
+    //subList(int start, int end) returns new list of elements from start index to end index
     System.out.println(arrayList.subList(2, 5));
     
+    arrayList.spliterator();
+    
+    Spliterator<Integer> spliterator = arrayList.spliterator();
+    
+    spliterator.forEachRemaining(System.out::println);
     
 	}
     
