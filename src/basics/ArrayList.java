@@ -1,5 +1,6 @@
 package basics;
 
+import java.awt.event.ItemEvent;
 import java.util.Iterator;
 import java.util.List;
 
@@ -101,8 +102,11 @@ public class ArrayList {
     System.out.println(arrayList);
     
     //removeAll(Collection<?> c) used to remove all elements from the list
-    arrayList.removeAll(arrIntegers);
-    System.out.println(arrayList);
+//    arrayList.removeAll(arrIntegers);
+//    System.out.println(arrayList);
+    
+    arrayList.retainAll(arrIntegers);
+    System.out.println("ArrayList: "+arrayList);
     
 	}
     
