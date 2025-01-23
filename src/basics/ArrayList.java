@@ -105,8 +105,12 @@ public class ArrayList {
 //    arrayList.removeAll(arrIntegers);
 //    System.out.println(arrayList);
     
+    //retainAll(Collection<?> c) in short this method replaces original list with specified one
     arrayList.retainAll(arrIntegers);
     System.out.println("ArrayList: "+arrayList);
+    
+    arrayList.set(0, 46);
+    System.out.println(arrayList);
     
 	}
     
