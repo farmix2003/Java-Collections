@@ -125,8 +125,10 @@ public class ArrayList {
     //subList(int start, int end) returns new list of elements from start index to end index
     System.out.println(arrayList.subList(2, 5));
     
-    arrayList.spliterator();
     
+    //The spliterator() method in Java is used to iterate over the elements of an ArrayList.
+    //It provides a more efficient wayto traverse the collection specially with parallel processing. 
+    //This method is part of Java 8 and later.
     Spliterator<Integer> spliterator = arrayList.spliterator();
     
     spliterator.forEachRemaining(System.out::println);
