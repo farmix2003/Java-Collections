@@ -57,6 +57,10 @@ public class LinkedListTutorial {
 		nameList.clear();
 		System.out.println(nameList);
 		
+		//boolean contains(Object o) is used to return true if a list contains a specified element.
+		System.out.println(!nameList.contains("Farrukh"));
+		
+		
 	}
 
 }
