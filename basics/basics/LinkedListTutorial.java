@@ -50,6 +50,9 @@ public class LinkedListTutorial {
 		nameList.addAll(2, namesList2);
 		System.out.println(nameList);
 		
+		//int size() returns length of elementd in the LL
+		System.out.println(nameList.size());
+		
 	}
 
 }
