@@ -53,6 +53,10 @@ public class LinkedListTutorial {
 		//int size() returns length of elementd in the LL
 		System.out.println(nameList.size());
 		
+		//void clear() used to clear LL
+		nameList.clear();
+		System.out.println(nameList);
+		
 	}
 
 }
