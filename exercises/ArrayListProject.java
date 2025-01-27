@@ -52,13 +52,9 @@ class StudentManager {
 	}
 	
 	public void addStudent(Student student) {
-		try {			
-			if (!students.contains(student.getId())) {				
+		try {						
 				students.add(student);
 				System.out.println("Student added successfully");
-			}else {
-				System.out.println("Please use another number for id");
-			}
 		} catch (Exception e) {
 		 System.out.println("Something went wrong");
 		}
