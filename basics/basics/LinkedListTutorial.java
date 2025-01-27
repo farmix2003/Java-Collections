@@ -1,7 +1,9 @@
 package basics;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 //Java LinkedList class uses a doubly linked list to store the elements. 
 //It provides a linked-list data structure. 
@@ -27,7 +29,7 @@ public class LinkedListTutorial {
 		// TODO Auto-generated method stub
        
 		//LinkedList creation
-		List<String> nameList = new LinkedList<>();
+		LinkedList<String> nameList = new LinkedList<String>();
 		
 		// boolean add(Element e) is used to insert element to the end of LL
 		nameList.add("Farrukh");
@@ -54,11 +56,23 @@ public class LinkedListTutorial {
 		System.out.println(nameList.size());
 		
 		//void clear() used to clear LL
-		nameList.clear();
-		System.out.println(nameList);
+//		nameList.clear();
+//		System.out.println(nameList);
 		
 		//boolean contains(Object o) is used to return true if a list contains a specified element.
-		System.out.println(!nameList.contains("Farrukh"));
+		System.out.println(nameList.contains("Farrukh"));
+		
+		//listIterator is used to iterate elements over the LL
+//		ListIterator<String> listIterator = nameList.listIterator();
+		
+//		while(listIterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
+		
+		Iterator<String> iterator = nameList.iterator();
+		while(iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
 		
 		
 	}
