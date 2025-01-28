@@ -89,6 +89,13 @@ public class LinkedListTutorial {
 		
 		//getLast() is used to return the last element in a list.
 		System.out.println(nameList.getLast());
+	
+		//indexOf(Object o) returns the index in a list of the first occurrence of the specified element, 
+		//or -1 if the list does not contain any element.
+		System.out.println(nameList.indexOf("Sanjar"));
+		
+		//lastIndexOf(Object o) is used to return the index in a list of the last occurrence of the specified element, or -1 if the list does not contain any element.
+		System.out.println(nameList.lastIndexOf("Jhonny"));
 		
 	}
 
