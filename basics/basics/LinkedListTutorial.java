@@ -75,7 +75,20 @@ public class LinkedListTutorial {
 			System.out.println(iterator.next());
 		}
 		
+		
+		//element() retrieves the first element of list	 
 		System.out.println(nameList.element());
+		
+		
+		//get(int index) is used to return the element at the specified position in a list.
+		System.out.println(nameList.get(2));
+		
+		//getFirst() It is used to return the first element in a list.
+		System.out.println(nameList.getFirst());
+		
+		
+		//getLast() is used to return the last element in a list.
+		System.out.println(nameList.getLast());
 		
 	}
 
