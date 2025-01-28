@@ -115,6 +115,15 @@ public class LinkedListTutorial {
 		//peekLast retrieves the last elements of a list or returns null if list is an empty
 		System.out.println(nameList.peekLast());
 		
+		//poll() retrieves and removes the first element of a list.
+		System.out.println(nameList.poll());
+		
+		//pollFirst() retrieves and removes the first element of a list, or returns null if a list is empty.
+		System.out.println(nameList.pollFirst());
+		
+		//pollLast() retrieves and removes the last element of a list, or returns null if a list is empty.
+		System.out.println(nameList.pollLast());
+		
 	}
 
 }
