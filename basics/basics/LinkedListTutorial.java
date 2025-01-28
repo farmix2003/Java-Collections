@@ -106,6 +106,15 @@ public class LinkedListTutorial {
 		//offerLast(E e) inserts the specified element at the end of a list.
 		System.out.println(nameList.offerLast("Hazard"));
 		
+		//peek() retieves first element of list
+		System.out.println(nameList.peek());
+		
+		//peekFisrt() It retrieves the first element of a list or returns null if a list is empty.
+		System.out.println(nameList.peekFirst());
+		
+		//peekLast retrieves the last elements of a list or returns null if list is an empty
+		System.out.println(nameList.peekLast());
+		
 	}
 
 }
