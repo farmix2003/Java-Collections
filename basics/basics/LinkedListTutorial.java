@@ -97,6 +97,15 @@ public class LinkedListTutorial {
 		//lastIndexOf(Object o) is used to return the index in a list of the last occurrence of the specified element, or -1 if the list does not contain any element.
 		System.out.println(nameList.lastIndexOf("Jhonny"));
 		
+		//offer(E e) adds the specified element as the last element of a list.
+		System.out.println(nameList.offer("Neto"));
+		
+		//offerFirst(E e) inserts the specified element at the front of a list.
+		System.out.println(nameList.offerFirst("Doe"));
+		
+		//offerLast(E e) inserts the specified element at the end of a list.
+		System.out.println(nameList.offerLast("Hazard"));
+		
 	}
 
 }
