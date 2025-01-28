@@ -62,18 +62,20 @@ public class LinkedListTutorial {
 		//boolean contains(Object o) is used to return true if a list contains a specified element.
 		System.out.println(nameList.contains("Farrukh"));
 		
-		//listIterator is used to iterate elements over the LL
-//		ListIterator<String> listIterator = nameList.listIterator();
+		//listIterator() method of the LinkedList class returns a ListIterator that allows us to iterate over the elements of the list.
+		ListIterator<String> listIterator = nameList.listIterator();
 		
-//		while(listIterator.hasNext()) {
-//			System.out.println(iterator.next());
-//		}
+		while(listIterator.hasNext()) {
+			System.out.println(listIterator.next());
+			}
 		
+		//iterator() method of the LinkedList class returns a Iterator that allows us to iterate over the elements of the list.
 		Iterator<String> iterator = nameList.iterator();
 		while(iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
 		
+		System.out.println(nameList.element());
 		
 	}
 
