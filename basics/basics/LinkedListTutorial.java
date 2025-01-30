@@ -129,6 +129,34 @@ public class LinkedListTutorial {
 		
 		//push(E e) pushes an element onto the stack represented by a list.
 		nameList.push("Neo");
+		nameList.push("Farrukh");
+		//remove() retrieves and removes the first element of the list
+		System.out.println(nameList.remove());
+		
+		
+		//remove(int index) removes an element from specified index of the list
+		System.out.println(nameList.remove(3));
+		
+		//remove(Object o) used to remove the first occurrence of the specified element in a list.
+		System.out.println(nameList.remove("Farrukh"));
+		
+		//removeAll(Collection c) used to remove collection in the list
+		System.out.println(nameList.removeAll(namesList2));
+		
+		//removeFirst() removes and returns the first element from a list.
+		System.out.println(nameList.removeFirst());
+		
+		//removeFirstOccurrence(Object o) is used to remove the first occurrence of the specified element in a list (when traversing the list from head to tail).
+		System.out.println(nameList.removeFirstOccurrence("Farrukh"));
+		
+		//removeLast() removes and returns the last element in the list
+		System.out.println(nameList.removeLast());
+		
+		//removeLastOccurence(Object o) removes the last occurrence of the specified element in a list (when traversing the list from head to tail).
+		System.out.println(nameList.removeLastOccurrence("Farrukh"));
+		
+		//removeIf(Predicate<?> f) removes elements based on your logic
+		nameList.removeIf(name -> name.startsWith("D"));
 		
 	}
 
