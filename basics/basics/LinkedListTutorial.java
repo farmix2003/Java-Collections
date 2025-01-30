@@ -131,7 +131,7 @@ public class LinkedListTutorial {
 		nameList.push("Neo");
 		nameList.push("Farrukh");
 		//remove() retrieves and removes the first element of the list
-		System.out.println(nameList.remove());
+//		System.out.println(nameList.remove());
 		
 		
 		//remove(int index) removes an element from specified index of the list
@@ -141,7 +141,7 @@ public class LinkedListTutorial {
 		System.out.println(nameList.remove("Farrukh"));
 		
 		//removeAll(Collection c) used to remove collection in the list
-		System.out.println(nameList.removeAll(namesList2));
+//		System.out.println(nameList.removeAll(namesList2));
 		
 		//removeFirst() removes and returns the first element from a list.
 		System.out.println(nameList.removeFirst());
@@ -157,6 +157,14 @@ public class LinkedListTutorial {
 		
 		//removeIf(Predicate<?> f) removes elements based on your logic
 		nameList.removeIf(name -> name.startsWith("D"));
+		
+		//set(int index, E e) used to replace an element in the given index
+		System.out.println(nameList.set(2, "Joan"));
+		
+		//toArray() used to convert List to normal Array;
+		nameList.toArray();
+		
+		
 		
 	}
 
