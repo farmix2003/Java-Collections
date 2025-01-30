@@ -164,7 +164,8 @@ public class LinkedListTutorial {
 		//toArray() used to convert List to normal Array;
 		nameList.toArray();
 		
-		
+		//isEmpty returns true if list is empty, otherwise false
+		nameList.isEmpty();
 		
 	}
 
