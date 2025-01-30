@@ -124,6 +124,9 @@ public class LinkedListTutorial {
 		//pollLast() retrieves and removes the last element of a list, or returns null if a list is empty.
 		System.out.println(nameList.pollLast());
 		
+		//pop() pops an element from the stack represented by a list.
+		System.out.println("pop: "+nameList.pop());
+		
 	}
 
 }
