@@ -170,11 +170,14 @@ public class LinkedListTutorial {
 		
 		//Returns an iterator over the elements in this deque in reversesequential order. 
 		//The elements will be returned in order fromlast (tail) to first (head).
-		Iterator<String> i = nameList.descendingIterator();
+//		Iterator<String> i = nameList.descendingIterator();
+//		
+//		while(i.hasNext()) {
+//			System.out.println(i.next());
+//		}
 		
-		while(i.hasNext()) {
-			System.out.println(i.next());
-		}
+		//subList(int start, int end) creates and returns a new list of given indexes
+		System.out.println(nameList.subList(2, 5));
 		
 	}
 
