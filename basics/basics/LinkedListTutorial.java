@@ -127,6 +127,9 @@ public class LinkedListTutorial {
 		//pop() pops an element from the stack represented by a list.
 		System.out.println("pop: "+nameList.pop());
 		
+		//push(E e) pushes an element onto the stack represented by a list.
+		nameList.push("Neo");
+		
 	}
 
 }
