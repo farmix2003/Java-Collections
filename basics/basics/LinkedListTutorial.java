@@ -167,6 +167,15 @@ public class LinkedListTutorial {
 		//isEmpty returns true if list is empty, otherwise false
 		nameList.isEmpty();
 		
+		
+		//Returns an iterator over the elements in this deque in reversesequential order. 
+		//The elements will be returned in order fromlast (tail) to first (head).
+		Iterator<String> i = nameList.descendingIterator();
+		
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
+		
 	}
 
 }
