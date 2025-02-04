@@ -37,8 +37,7 @@ public class LinkedHashSetTutorial {
         set.add("1");
         
         //So all methods of LinkedHashSet are the same with ArrayList and LinkedList methods so I am not going to write them again.
-        //But LinkedHashSet does not allow you to insert duplicate elements,
-        //whenever you insert same element twice, LinkedHashSet overrides first one of it and puts second one to the List
+        //But LinkedHashSet does not allow you to insert duplicate elements.
         
         set.add("2");
         set.add("1");
@@ -47,7 +46,6 @@ public class LinkedHashSetTutorial {
         
         System.out.println(set);
         System.out.println(set.size());
-        
 	}
 
 }
