@@ -57,7 +57,7 @@ public class TreeSetTutorial {
 		//add(Element e) is used to add the specified element to this set if it is not already present.
 		set.add(1);
 		set.add(2);
-		set.add(3);
+//		set.add(3);
 		set.add(2);
 		
 		set3.add(4);
@@ -67,6 +67,12 @@ public class TreeSetTutorial {
 		set.addAll(set3);
 		
 		System.out.println(set);
+		
+		//ceiling(Element e) t returns the equal or closest greatest element of the specified element from the set, or
+		//null there is no such element.
+		int ceilingNum = set.ceiling(3);
+		System.out.println(ceilingNum);
+		
 		
 	}
 
