@@ -5,6 +5,8 @@ import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+import javax.lang.model.element.Element;
+
 //Java TreeSet class implements the Set interface that uses a tree for storage. 
 //It inherits AbstractSet class and implements the NavigableSet interface. 
 //The objects of the TreeSet class are stored in ascending order.
@@ -51,6 +53,20 @@ public class TreeSetTutorial {
 		
 		//It is used to build a TreeSet that contains the elements of the given SortedSet.
 		TreeSet<String> set4 = new TreeSet<>(set2);
+		
+		//add(Element e) is used to add the specified element to this set if it is not already present.
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		set.add(2);
+		
+		set3.add(4);
+		set3.add(1);
+		set3.add(5);
+		
+		set.addAll(set3);
+		
+		System.out.println(set);
 		
 	}
 
