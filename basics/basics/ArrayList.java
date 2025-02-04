@@ -4,6 +4,7 @@ import java.awt.event.ItemEvent;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Spliterator;
+import java.util.function.IntFunction;
 
 // ArrayList in Java is a dynamic array implementation that 
 //  belongs to the Java Collections Framework. 
@@ -132,7 +133,7 @@ public class ArrayList {
     Spliterator<Integer> spliterator = arrayList.spliterator();
     
     spliterator.forEachRemaining(System.out::println);
-    
+ 
 	}
     
 
