@@ -124,6 +124,12 @@ public class TreeSetTutorial {
 		
 		//lower(Element e) returns the closest lower element of the specified element in the set, otherwise returns null; 
 		System.out.println(set.lower(3));
+		
+		//first() returns first element in the current set
+		System.out.println(set.first());
+		
+		//last() returns last element in the current set
+		System.out.println(set.last());
 	}
 
 }
