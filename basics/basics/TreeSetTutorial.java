@@ -2,6 +2,7 @@ package basics;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -72,6 +73,18 @@ public class TreeSetTutorial {
 		//null there is no such element.
 		int ceilingNum = set.ceiling(3);
 		System.out.println(ceilingNum);
+		
+		
+		//descendingIterator() used to iterate the elements in descending order
+		Iterator<Integer> iterator = set.descendingIterator();
+//		while(iterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
+		
+		Iterator<Integer> iterator2 = set.iterator();
+		while(iterator2.hasNext()) {
+			System.out.println(iterator2.next());
+		}
 		
 		
 	}
