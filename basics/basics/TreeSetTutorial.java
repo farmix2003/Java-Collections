@@ -59,7 +59,7 @@ public class TreeSetTutorial {
 		//add(Element e) is used to add the specified element to this set if it is not already present.
 		set.add(1);
 		set.add(2);
-//		set.add(3);
+		set.add(3);
 		set.add(2);
 		
 		set3.add(4);
@@ -115,12 +115,15 @@ public class TreeSetTutorial {
 		SortedSet<Integer> sortedSet = set.headSet(7);
 		System.out.println(sortedSet);
 		
+		//Returns a view of the portion of this set whose elements rangefrom fromElement, inclusive, to toElement,exclusive.
 		SortedSet<Integer> sortedSet2 = set.subSet(1, 5);
 		System.out.println(sortedSet2);
 		
+		//higher(Element e) returns the closest greater element of the specified element in the set, otherwise returns null;
+		System.out.println(set.higher(2));
 		
-		
-		
+		//lower(Element e) returns the closest lower element of the specified element in the set, otherwise returns null; 
+		System.out.println(set.lower(3));
 	}
 
 }
