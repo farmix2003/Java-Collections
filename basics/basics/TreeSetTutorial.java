@@ -3,6 +3,7 @@ package basics;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.NavigableSet;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -87,7 +88,36 @@ public class TreeSetTutorial {
 //			System.out.println(iterator2.next());
 //		}
 		
+		// floor(Element e) returns the equal or closest least element of the specified element from the set,
+		//or null there is no such element
 		System.out.println(set.floor(6));
+		
+		//descendingSet() returns elements in reverse order
+		NavigableSet<Integer> navigableSet = set.descendingSet();
+		System.out.println(navigableSet);
+		
+		//headSet returns the group of elements that are less than or equal to (if, inclusive is true) the specified element.
+		NavigableSet<Integer> navigableSet2 = set.headSet(6, false);
+		System.out.println(navigableSet2);
+		
+		//Returns a view of the portion of this set whose elements range from fromElement to toElement. 
+		//If fromElement and toElement are equal, the returned set is empty unless fromInclusive and toInclusive are both true. 
+		//The returned setis backed by this set, so changes in the returned set are reflected inthis set, and vice-versa.
+		//The returned set supports all optional setoperations that this set supports. 
+		NavigableSet<Integer> navigableSet3 = set.subSet(1,false, 5, false);
+		System.out.println(navigableSet3);
+		
+		//tailSet(int fromElement, boolean inclusive) returns elements starting from fromElement starting from back.
+		NavigableSet<Integer> navigableSet4 = set.tailSet(3, false);
+		System.out.println(navigableSet4);
+		
+//		 returns the group of elements that are less than the specified element.
+		SortedSet<Integer> sortedSet = set.headSet(7);
+		System.out.println(sortedSet);
+		
+		SortedSet<Integer> sortedSet2 = set.subSet(1, 5);
+		System.out.println(sortedSet2);
+		
 		
 		
 		
