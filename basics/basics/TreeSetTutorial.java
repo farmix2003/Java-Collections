@@ -81,10 +81,14 @@ public class TreeSetTutorial {
 //			System.out.println(iterator.next());
 //		}
 		
+		//iterator() used to iterate the elements in ascending order
 		Iterator<Integer> iterator2 = set.iterator();
-		while(iterator2.hasNext()) {
-			System.out.println(iterator2.next());
-		}
+//		while(iterator2.hasNext()) {
+//			System.out.println(iterator2.next());
+//		}
+		
+		System.out.println(set.floor(6));
+		
 		
 		
 	}
