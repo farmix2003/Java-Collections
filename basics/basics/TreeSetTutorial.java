@@ -139,9 +139,16 @@ public class TreeSetTutorial {
 		//pollLast(E e) is used to retrieve and remove the highest(last) element.
 //		System.out.println(set.pollLast());
 		
+		//It is used to create a late-binding and fail-fast spliterator over the elements.
 		Spliterator<Integer> spliterator = set.spliterator();
-		
 		System.out.println(spliterator.estimateSize());
+		
+		
+		//contains(O o) returns true if this set contains the specified element.
+		System.out.println(set.contains(3));
+		
+		//isEmpty() returns true if set is empty, otherwise false
+		System.out.println(set.isEmpty());
 		
 	}
 
