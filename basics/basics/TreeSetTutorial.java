@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NavigableSet;
 import java.util.SortedSet;
+import java.util.Spliterator;
 import java.util.TreeSet;
 
 import javax.lang.model.element.Element;
@@ -133,10 +134,14 @@ public class TreeSetTutorial {
 		
 		System.out.println("-----------");
 		//pollFirst(E e) is used to retrieve and remove the lowest(first) element.
-		System.out.println(set.pollFirst());
+//		System.out.println(set.pollFirst());
 		
 		//pollLast(E e) is used to retrieve and remove the highest(last) element.
-		System.out.println(set.pollLast());
+//		System.out.println(set.pollLast());
+		
+		Spliterator<Integer> spliterator = set.spliterator();
+		
+		System.out.println(spliterator.estimateSize());
 		
 	}
 
