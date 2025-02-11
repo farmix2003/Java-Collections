@@ -130,6 +130,14 @@ public class TreeSetTutorial {
 		
 		//last() returns last element in the current set
 		System.out.println(set.last());
+		
+		System.out.println("-----------");
+		//pollFirst(E e) is used to retrieve and remove the lowest(first) element.
+		System.out.println(set.pollFirst());
+		
+		//pollLast(E e) is used to retrieve and remove the highest(last) element.
+		System.out.println(set.pollLast());
+		
 	}
 
 }
