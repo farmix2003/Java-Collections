@@ -150,6 +150,17 @@ public class TreeSetTutorial {
 		//isEmpty() returns true if set is empty, otherwise false
 		System.out.println(set.isEmpty());
 		
+		//clone() returns a shallow copy of this TreeSet instance.
+		Object cloneIntegers = set.clone();
+		System.out.println(cloneIntegers);
+		
+		//remove(O o) is used to remove the specified element from this set if it is present.
+		System.out.println(set.remove(1));
+		
+		//clear() clears set.
+		set.clear();
+		System.out.println(set);
+		
 	}
 
 }
