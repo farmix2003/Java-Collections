@@ -1,5 +1,5 @@
 
-class Employee{
+class Employee implements Comparable<Employee> {
 	private int id;
 	private String fullNameString;
 	private String departmentString;
@@ -38,6 +38,17 @@ class Employee{
 	public void setMonthlySalary(double monthlySalary) {
 		this.monthlySalary = monthlySalary;
 	}
+
+
+	@Override
+	public int compareTo(Employee o) {
+		
+		return Integer.compare(this.id, o.id);
+	}
+}
+
+class EmployeeManager {
+	
 }
 
 public class TreeSetProject {
