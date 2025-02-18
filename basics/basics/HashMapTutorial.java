@@ -56,15 +56,29 @@ public class HashMapTutorial {
        //initialisation of the capacity of the hash map to the given integer value, capacity.
        Map<Integer, Integer> map2 = new HashMap<>(10);
        
-       Map<String, Boolean> anotherMap = new HashMap<>();
-       anotherMap.put("Active", false);
-       anotherMap.put("Active", true);
+       Map<String, Integer> anotherMap = new HashMap<>();
+       anotherMap.put("Active", 10);
+       anotherMap.put("Active", 10);
        
        //initialisation of the hash map by using the elements of the given Map object anotherMap.
-       Map<String, Boolean> map3 = new HashMap<>(anotherMap);
+       Map<String, Integer> map3 = new HashMap<>(anotherMap);
        
        // initialisation of both the capacity and load factor of the hash map by using its arguments.
        Map<String, String> map4 = new HashMap<>(4, 0.60f);
+       
+       //put(O key, O value) used to insert an entry to the map
+       map.put("One", 1);
+       map.put("Two", 2);
+       map.put("Three", 3);
+       map.put("Four", 4);
+       System.out.println(map);
+       
+       //putAll(Map map) used to insert the specified map to the Map
+       map.putAll(anotherMap);
+       
+       //putIfAbsent(O o) inserts the specified value with the specified key in the map only if it is not already specified.
+       map.putIfAbsent("Five", 5);
+       
 	}
 
 }
