@@ -87,6 +87,13 @@ public class HashMapTutorial {
        //isEmpty() returns true if map is empty, otherwise returns false
        System.out.println(map.isEmpty());
        
+       //entrySet() used to return a collection view of the mappings contained in the map
+       System.out.println(map.entrySet());
+       
+       //keySet() used to return a set view of the keys contained in the map.
+       System.out.println(map.keySet());
+       
+       
 	}
 
 }
