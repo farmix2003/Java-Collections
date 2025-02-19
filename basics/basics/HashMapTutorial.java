@@ -79,6 +79,8 @@ public class HashMapTutorial {
        //putIfAbsent(O o) inserts the specified value with the specified key in the map only if it is not already specified.
        map.putIfAbsent("Five", 5);
        
+       System.out.println(map);
+       
 	}
 
 }
