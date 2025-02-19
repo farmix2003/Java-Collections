@@ -1,5 +1,6 @@
 package basics;
 
+import java.awt.RenderingHints.Key;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -98,6 +99,18 @@ public class HashMapTutorial {
        
        //remove(O key, O value) used to remove the specified values with the associated specified keys from the map.
        System.out.println(map.remove("Active", 10));
+       
+       // compute() -> Modifies existing value or inserts a new one
+       map.compute("Two", (key, value) -> (value == null) ? 1: value+2);
+       System.out.println(map);
+       
+       // computeIfAbsent() -> Adds a value if key is not present
+       map.computeIfAbsent("Six", key -> 6);
+       System.out.println(map);
+       
+       // computeIfPresent() -> Updates the value if key exists
+       map.computeIfPresent("Six", (key, value) -> value*2);
+       System.out.println(map);
        
 	}
 
