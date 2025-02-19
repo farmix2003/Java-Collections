@@ -93,6 +93,11 @@ public class HashMapTutorial {
        //keySet() used to return a set view of the keys contained in the map.
        System.out.println(map.keySet());
        
+       //remove(Object key) is used to delete an entry for the specified key.
+       System.out.println(map.remove("Five"));
+       
+       //remove(O key, O value) used to remove the specified values with the associated specified keys from the map.
+       System.out.println(map.remove("Active", 10));
        
 	}
 
