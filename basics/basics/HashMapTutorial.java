@@ -81,6 +81,12 @@ public class HashMapTutorial {
        
        System.out.println(map);
        
+       //clear() clears the map
+       anotherMap.clear();
+       
+       //isEmpty() returns true if map is empty, otherwise returns false
+       System.out.println(map.isEmpty());
+       
 	}
 
 }
