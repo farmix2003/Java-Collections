@@ -150,6 +150,8 @@ public class HashMapTutorial {
        
        System.out.println(map);
        
+       //values() returns collection of values of map
+       System.out.println(map.values());
        
        
 	}
