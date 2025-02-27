@@ -112,6 +112,12 @@ public class HashMapTutorial {
        map.computeIfPresent("Six", (key, value) -> value*2);
        System.out.println(map);
        
+       //containsValue(O o) returns true if specified value exists in the map , else false
+       System.out.println(map.containsValue(4));
+       
+       //containsKey(O o) returns true if specified key exists in the map, else false
+       System.out.println(map.containsKey("Six"));
+       
 	}
 
 }
