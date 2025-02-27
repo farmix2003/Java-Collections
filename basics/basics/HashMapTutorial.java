@@ -137,7 +137,20 @@ public class HashMapTutorial {
        //associates it with the given non-null value.
        System.out.println(map.merge("Seven", 7, (k, v) -> k+v));
        
+       //replace(O key, O value) replaces the value for the specified key
+       map.replace("Six", 6);
+       
+       //replace(O key, O oldValue, O newValue) replaces the old value with the new value for a specified key.
+       map.replace("Two", 4, 2);
+       
+       //replaceAll(BiFunction action) replaces each entry's value with the result of invoking the given function on that entry until
+       //all entries have been processed or the function throws an exception.
+       map.replaceAll((key, value) -> key.length()+value);
+       
+       
        System.out.println(map);
+       
+       
        
 	}
 
