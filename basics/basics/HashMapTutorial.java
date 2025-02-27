@@ -118,6 +118,9 @@ public class HashMapTutorial {
        //containsKey(O o) returns true if specified key exists in the map, else false
        System.out.println(map.containsKey("Six"));
        
+       //contains(O o) used to compare current map with another map, if they are the same returns true else false
+       System.out.println(map.equals(anotherMap));
+       
 	}
 
 }
