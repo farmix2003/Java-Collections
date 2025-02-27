@@ -124,8 +124,14 @@ public class HashMapTutorial {
        //forEach(BiConsumer action) It performs the given action for each entry in the map until all entries have been processed 
        //or the action throws an exception.
        map.forEach((key, value) -> {
-    	   System.out.println(key.concat(" value") + "="+value.compareTo(key.length()));
+    	   System.out.println(key + "="+value);
        });
+       
+       //get(O o) returns the object that contains the value associated with the key.
+       System.out.println(map.get("Three"));
+       
+       
+       System.out.println(map.getOrDefault("Six", 5));
        
 	}
 
