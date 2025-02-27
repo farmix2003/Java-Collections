@@ -130,8 +130,14 @@ public class HashMapTutorial {
        //get(O o) returns the object that contains the value associated with the key.
        System.out.println(map.get("Three"));
        
-       
+       //getOrDefault(O key, O defaultValue) returns the value associated with the key, if not exists returns default value
        System.out.println(map.getOrDefault("Six", 5));
+       
+       //merge(O key, O value BiFunction) If the specified key is not already associated with a value or is associated with null,
+       //associates it with the given non-null value.
+       System.out.println(map.merge("Seven", 7, (k, v) -> k+v));
+       
+       System.out.println(map);
        
 	}
 
