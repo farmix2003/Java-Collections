@@ -121,6 +121,12 @@ public class HashMapTutorial {
        //contains(O o) used to compare current map with another map, if they are the same returns true else false
        System.out.println(map.equals(anotherMap));
        
+       //forEach(BiConsumer action) It performs the given action for each entry in the map until all entries have been processed 
+       //or the action throws an exception.
+       map.forEach((key, value) -> {
+    	   System.out.println(key.concat(" value") + "="+value.compareTo(key.length()));
+       });
+       
 	}
 
 }
