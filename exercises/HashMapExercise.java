@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
@@ -51,7 +52,7 @@ class WordCounter{
 				minCount = entry.getValue();
 				leastFrequent = entry.getKey();
 			}
-			System.out.println("Most Frequent Word: " + mostFrequent + " (" + maxCount + " times)");
+			System.out.println("Most Frequent Word: " + mostFrequent+" " + " (" + maxCount + " times)");
 			System.out.println("Least Frequent Word: " + leastFrequent + " (" + minCount + " times)");
 		}
 		
@@ -67,6 +68,14 @@ public class HashMapExercise {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		String fileString = "D:\\Eclipse\\Collections\\exercises\\text.txt";
+		WordCounter counter = new WordCounter();
+		counter.countWords(fileString);
+		
+		counter.displayWordFrequencies();
+		counter.displayMostAndLeastFrequent();
+		
 
 	}
 
