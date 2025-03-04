@@ -1,7 +1,9 @@
 package basics;
 
+import java.awt.RenderingHints.Key;
 import java.util.Comparator;
 import java.util.Map;
+import java.util.NavigableMap;
 import java.util.TreeMap;
 
 //Java TreeMap class is a red-black tree-based implementation.
@@ -35,9 +37,20 @@ public class TreeMapTutorial {
         //Constructing an empty tree-based map that will be sorted using the comparator comp.
 		Map<Integer, Integer> map = new TreeMap<>(Comparator.comparing(k -> k > 2));
 		
-		Map<Integer, Integer> map2 = new TreeMap<>(Map.of(1,2,3,4,5,6,7,8,9,10, 3,2));
-		System.out.println(map2);
+		//Initialising a TreeMap with the entries from m, which will be sorted using the natural order of the keys.
+		Map<Integer, Integer> map2 = new TreeMap<>(Map.of(1,2,3,4,5,6,7,8,9,10, 11,12));
 		
+		//Initialising a TreeMap with the entries from the SortedMap sm, which will be sorted in the same order as sm.
+		Map<Integer, Integer> map3 = new TreeMap<>(map);
+		
+		//Constructing a tree map containing the elements of the specified collection, sorted using their natural order.
+		Map<Integer, Integer> map4 = new TreeMap<>(map2);
+		
+		
+	    System.out.println(map2.keySet());
+		
+		
+	
 	}
 
 }
