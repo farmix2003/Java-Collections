@@ -153,7 +153,21 @@ public class HashMapTutorial {
        //values() returns collection of values of map
        System.out.println(map.values());
        
+       name(24);
        
 	}
-
+  
+	public static void name(int n){
+	    int sum = 0;
+	    int temp = n; //To avoid modifying the original n.
+	    while(temp > 0){
+	        int digit = temp % 10;
+	        if(digit % 2 == 1){
+	            sum += digit;
+	        }
+	        temp /= 10;
+	    }
+	    System.out.println(sum);
+	}
+	
 }
